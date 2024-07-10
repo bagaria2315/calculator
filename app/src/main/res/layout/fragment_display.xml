@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".display">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+     <TextView
+         android:id="@+id/dispExp"
+         android:layout_above="@+id/dispAns"
+         android:text=""
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textAlignment="textEnd"
+         android:textSize="38dp"
+         android:textColor="#FFFFFF"
+         android:textStyle="bold"
+         android:paddingHorizontal="15dp"
+         android:paddingVertical="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/dispAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="23dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dispResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textSize="23dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+</FrameLayout>
